@@ -1,0 +1,80 @@
+Para instalar Neovim en una terminal de macOS, puedes seguir estos pasos. Utilizaremos Homebrew, que es un gestor de paquetes muy popular en macOS.
+
+Paso 1: Instalar Homebrew (si no lo tienes instalado)
+Si no tienes Homebrew instalado, puedes instalarlo ejecutando el siguiente comando en tu terminal:
+
+sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+Paso 2: Instalar Neovim usando Homebrew
+Una vez que Homebrew esté instalado, puedes instalar Neovim con el siguiente comando:
+
+sh
+Copy cod
+brew install neovim
+Paso 3: Verificar la Instalación
+Para asegurarte de que Neovim se ha instalado correctamente, puedes verificar la versión instalada ejecutando:
+
+sh
+Copy code
+nvim --version
+Este comando debería mostrarte la versión de Neovim que tienes instalada.
+
+Paso 4: Configuración Adicional (Opcional)
+Si quieres configurar Neovim de manera similar a Vim, puedes crear un directorio de configuración y añadir un archivo de configuración. El archivo de configuración por defecto de Neovim se encuentra en ~/.config/nvim/init.vim.
+
+Para crear el archivo y el directorio de configuración:
+
+sh
+Copy code
+mkdir -p ~/.config/nvim
+touch ~/.config/nvim/init.vim
+Ahora, puedes abrir init.vim con Neovim y empezar a personalizar tu configuración:
+
+sh
+Copy code
+nvim ~/.config/nvim/init.vim
+Ejemplo de Configuración Básica
+Aquí tienes un ejemplo de configuración básica que puedes pegar en tu init.vim:
+
+vim
+Copy code
+" Set line numbers
+set number
+
+" Enable syntax highlighting
+syntax on
+
+" Set relative line numbers
+set relativenumber
+
+" Enable mouse support
+set mouse=a
+
+" Set clipboard to use system clipboard
+set clipboard=unnamedplus
+
+" Set color scheme
+colorscheme desert
+Con esto, has instalado Neovim y configurado una configuración básica. Puedes personalizar init.vim según tus necesidades y preferencias.
+
+Paso 5: Usar Neovim
+Para empezar a usar Neovim, simplemente abre un archivo o inicia Neovim sin argumentos:
+
+sh
+Copy code
+nvim
+O para abrir un archivo específico:
+
+sh
+Copy code
+nvim nombre_del_archivo.txt
+Con estos pasos, deberías tener Neovim instalado y listo para su uso en tu sistema macOS.
+
+
+
+
+
+
+
